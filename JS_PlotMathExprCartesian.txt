@@ -1,0 +1,12 @@
+Write a javascript with the following requirement
+
+1. create a table at the center of the page
+2. the table has two rows and one column, make grid visible in thin line
+3. put a textbox that can take in a mathematical expression and click button in the upper row. default value of the text box is 'x*(x-2)*(x+2)'
+4. put a canvas that plot the math expression in the lower row. Do not put any background in the canvas. the background should be all white.
+5. make the edge of the canvas visible
+6. plot axis lines at (0,0) in the plot in black
+7. plot a grid lines in the plot in gray. Grid lines should start from x axis and y axis
+8. javascript for the plot should be stored in a separate file
+9. if you want to use style, create a separate css file.
+10. Create an html file that combines all of these components
