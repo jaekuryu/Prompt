@@ -1,0 +1,2 @@
+write a javascript function named SphericalToCartesian(r,a,e) that return a 3d cartesian point where r is radius, a is azimuth angle, e is elevation angle
+write a javascript function name rotate3d(Ax,Ay,Az) that rotate a 3d point(x,y,z) around X,Y,Z axis by Ax,Ay,Az where Ax, Ay, Az is rotation angle around X,Y,Z respectively

@@ -1,0 +1,17 @@
+Write a javascript with the following requirement
+
+1. Use math.js library for math operations and assume that math.js file is located at mathjs/math.js
+2. create a table at the center of the page. Gridlines of the table should be visible and thin.
+3. the table has three rows and one column, make grid visible in thin line
+4. In the first cell, put a textbox that can take in a number named as 'NoOfSample', the title of this text box is 'Number of samples' and a button named as 'Constellation'. the default value of the text box is 600.
+5. In the second cell, put a textbox that can take in a number named as 'Noise'. Title of this text box is 'Gaussian Noise (in dB)' .the default value of the text box is -15.
+6. In the third cell, put a canvas that plot the data in the file in the lower row. Do not put any background in the canvas. the background should be all white.
+7. set the range of the canvas so that x axis range is '-2 <= x <= 2' and y axis range is '-2 <= x <= 2'. Use scale and translation method of canvas for this.
+8. make the edge of the canvas visible
+9. plot axis lines at (0,0) in the plot in black
+10. plot a grid lines in the plot in gray. Grid lines should start from x axis and y axis
+11. Generate an array of random complex numbers with real part to be -1 or 1 and imaginary part to be -1 or 1. Both real and imaginary number is added with gaussian noise spcified at step 5.  The name of array is 'Signal'
+12. Plot the complex array 'Signal' on the canvas when 'Constellation' button is clicked. Real part of the complex number should be x coordinate and Imaginary part of the complex number should be y coordinate
+13. javascript for the plot should be stored in a separate file
+14. do not use css.
+15. Create an html file that combines all of these components

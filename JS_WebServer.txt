@@ -1,0 +1,2 @@
+can you write a simple web server script in java script without using express module. index.html should be located in public directory
+

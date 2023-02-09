@@ -1,0 +1,17 @@
+Write a html and javascript with the following requirement
+
+1. Use math.js library for math operations and assume that math.js file is located at mathjs/math.js
+2. create a table at the center of the page. Gridlines of the table should be visible and thin.
+3. the table has 4 rows and one column, make grid visible in thin line
+4. In the first cell, put a textbox that can take in a number named as 'NoOfSample', the title of this text box is 'Number of Points' and a button named as 'Plot'. the default value of the text box is 10. Labels and text boxes should be on the same line. The input box should have spin button
+5. In the second cell, put two textboxes that can take in A1 and t1 of the formula c1=A1*e^(i t1) where i denotes imaginary number. The default value of A1 = 0.5 and t1 = 30 in degree. Labels and text boxes should be on the same line. The input box should have spin button
+6. In the third cell, put two textboxes that can take in A2 and t2 of the formula c2=A2*e^(i t2) where i denotes imaginary number. The default value of A1 = 1.5 and t1 = 270 in degree. Labels and text boxes should be on the same line. The input box should have spin button
+7. In the fourth cell, put a canvas with the size of 400x400 pixel that plot the data in the file in the lower row. Do not put any background in the canvas. the background should be all white.
+8. set the range of the canvas so that x axis range is '-2 <= x <= 2' and y axis range is '-2 <= x <= 2'. Use scale and translation method of canvas for this.
+9. make the edge of the canvas visible
+10. plot axis lines at (0,0) in the plot in black
+11. write a function that returns an array of math.js complex numbers that interpolate from c1 and c2 with 'Number of Points'. The array show include both c1 and c2 and all the interpolated points.
+12. write a function named plotInterpolation() that plot the complex array returned in previous step on the canvas when 'Plot' button is clicked. Real part of the complex number should be x coordinate and Imaginary part of the complex number should be y coordinate
+13. javascript for the plot should be stored in a separate file
+14. do not use css.
+15. Create an html file that combines all of these components

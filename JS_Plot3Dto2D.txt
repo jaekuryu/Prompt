@@ -1,0 +1,20 @@
+Write a javascript with the following requirement.
+
+1. This is for projecting 3D coordinate onto 2d canvas
+2. Use math.js library for math operations if necessary and assume that math.js file is located at mathjs/math.js
+3. create a table at the center of the page. Gridlines of the table should be visible and thin.
+4. the table has three rows and one column, make grid visible in thin line. Display every component in a cell in one line
+5. In the first cell, put a textbox that can take in a number named as 'ViewDistance' and a button named as 'Draw'. The default value of ViewDistance is 5
+6. In the second cell, put a textbox that can take in a number named as 'Azimuth' and put another textbox that can take in a number named as 'Elevation'. Both of the textbox should have spin button with step = 5
+7. In the third cell, put a canvas with the size of 400x400 pixels. Do not put any background in the canvas. the background should be all white.
+8. Draw following 3D object which are projected onto 2D canvas. This should apply the ViewDistance and ViewAngle (Azimuth, Elevation)
+9. define a function called p2dtop3d(p3x,p3y,p3z,r,va,ve) that project a 3d point to a 2d point applying the distance and viewing angle.where (p3x,p3y,p3z) is a 3d point, r is distance from the origin and va is azimuth angle and ve is elevation in angle. all the angle is in degree
+10. define a function called DrawCube(dim,cx,cy,cz,r,va,ve) that draw a cube, where dim indicates the length of each side of the cube and (cx,cy,cz) at the center of the cube, where r is distance from the origin and va is azimuth angle and ve is elevation in angle. all the angle is in degree. use p2dtop3d() for the projection.
+11. define a function called DrawAxis(dim,r,va,ve) that draw axis at the origin (0,0,0). The range of x,y,z are all between -dim and +dim, where r is distance from the origin and va is azimuth angle and ve is elevation in angle. all the angle is in degree. use p2dtop3d() for the projection.
+12. set the range of canvas to be -3 <= x <= 3 and -3 <= y <= 3 using scale() and translation()
+13. do following when 'Draw' button is clicked.
+     a). draw an x,y,z axis. The range of axis is all between -2 and +2 using DrawAxis() function
+     b). draw a cube with every sides = 2 centered at the origin. Use drawCube()
+14. javascript for the plot should be stored in a separate file
+15. do not use css.
+16. Create an html file that combines all of these components

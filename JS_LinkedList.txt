@@ -1,0 +1,15 @@
+Write a javascript code meeting following requirement.
+
+ 
+1. Put an html table with three rows at the center of the page
+2. In the first row, put a textbox and 'Prepend','Append,'Insert','Delete' buttons
+3. In the second row, put a listbox with 'item1','item2','item3'
+4. In the third row, put a textfield named 'LinkedlistOutput'
+5. The data in the listbox is stored in a Linkedlist and print the linkedlist structure in 'LinkedlistOutput' in the format of 'A -> B -> C'
+6. Implement the routines for append, prepend, insert, remove operation for the linkedlist
+7. When clicking an item in the listbox, the selected item is shown in the text box. Reflect this change to the linkedlist and print the output
+8. When clicking 'Prepend' button, the text in the textbox is added on top of the listbox. Reflect this change to the linkedlist and print the output
+9. When clicking 'Append' button, the text in the textbox is added on bottom of the listbox. Reflect this change to the linkedlist and print the output
+10. When clicking 'Insert' button, the text in the textbox is added at the selected position in the list box. If there is no selected position, show a popup saying 'you have to select a position in the list box' . Reflect this change to the linkedlist and print the output
+11. When clicking 'Delete' button, the text in the textbox is removed from the list box. If there is no selected position, show a popup saying 'you have to select a position in the list box' . Reflect this change to the linkedlist and print the output
+12. Write the html, css, javascript into separate files .

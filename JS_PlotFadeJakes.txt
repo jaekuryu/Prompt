@@ -1,0 +1,12 @@
+Write a javascript with the following requirement
+
+1. create a table at the center of the page
+2. the table has two rows and one column, make grid visible in thin line
+3. put a textbox with the default value = 2 and click button with the title of 'plot' in the upper row.
+4. put a canvas with the size of 400x400 in the lower row. Do not put any background in the canvas. the background should be all white.
+5. create a script to simulate fading with Jakes model using the textbox value as the number of delay taps.
+6. apply the fading to a test data with 200 numbers.
+7. plot the data before and after fading
+8. javascript for the plot should be stored in a separate file
+9. if you want to use style, create a separate css file.
+10. Create an html file that combines all of these components

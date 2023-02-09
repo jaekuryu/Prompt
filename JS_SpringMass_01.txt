@@ -1,0 +1,10 @@
+Can you write a javascript in the following requirement.
+
+1. Put an html table with two rows at the center of the page. The width of the table is 600px
+2. In the first row, put a canvas
+3. In the second row, put three buttons horizontally. The first button with 'Start',the second button with 'Stop' and the third button with 'Reset'
+4. draw the initial state of a spring and a mass in vertical direction.
+5. If 'start' button is clicked, spring oscillate in vertical direction. The oscillation occurs in vertical direction only and the motion is simulated by a differential equation (2nd order ODE).  Spring stiffness,damping and gravitation should be included in the equation.
+6. If 'stop' button is clicked, stop the simulation
+7. If 'reset' button is clicked, go back to initial state.
+8. HTML and javascript should be written in separate files.

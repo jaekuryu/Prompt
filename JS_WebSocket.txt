@@ -1,0 +1,1 @@
+create a simple java script for websocket. create a server and client as separate files. Client and Server exchange the messages in JSON format.

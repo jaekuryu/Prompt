@@ -1,0 +1,13 @@
+Write a javascript code meeting following requirement.
+
+1. Put an html table with three rows at the center of the page. The width of the table is 800px
+2. In the first row, put a textbox with the default value of 'file.dat' and the name of the textbox is 'filename'. Width of the textbox should span the width of the table
+3. In the second row, put an image box that can load a specified image. Put the image box at the center of the row.
+4. In the third row, put 5 buttons with labels : 'Load','>> Next', '<< Prev', 'Play', 'Stop'.
+5. file.dat contains a list of file names (including the path). One file at a line. This will be given by user
+6. Clicking on 'Load', the all the file names of file.dat should be saved into an array (or list) and the first file should be displayed on the image box. The size of the imagebox should automatically adjusted to the size of the image
+7. Clicking on '>> Next', the Next image should be displayed in the image box. If the current image is the last item from the array, it should roll back to the first item.
+8. Clicking on '>> Prev', the Previous image should be displayed in the image box. If the current image is the first item from the array, it should roll back to the last item.
+9. Clicking on 'Play', display every images one by one from the first to last with 300ms gaps.
+10. Clicking on 'Stop', Stop 'Play'
+11. Write the html, css, javascript into separate files

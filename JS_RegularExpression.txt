@@ -1,0 +1,9 @@
+Write a javascript with the following requirement
+
+1. create a table with width = 600 at the center of the page
+2. the table has three rows and one column, make grid visible in thin line
+3. put a text field that can take in a long string. Put some good string suitable for Regular Expression testing
+4. In the second row, put a text box with the name = 'RegString' at the left, a drop downbox of name = 'RegOperator' with the elements of test,exec,match,search,replace,split at the center, a button labeled as 'Process'.
+5. In the third row, put a text field with the name = 'Result'
+6. Write a javascript that apply the RegOperator to the string in RegString and output the result in 'Result' text field8. javascript for the plot should be stored in a separate file
+7. Create javascript and html in separate file

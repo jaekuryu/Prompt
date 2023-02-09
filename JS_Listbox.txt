@@ -1,0 +1,11 @@
+Write a javascript code meeting following requirement.
+
+1. Put an html table with two rows at the center of the page
+2. In upper cell, put a textbox and 'Prepend','Append','Insert', 'Delete' buttons
+3. In lower cell, put a listbox with 'item1','item2','item3'
+4. When clicking an item in the listbox, the selected item is shown in the text box
+5. When clicking 'Prepend' button, the text in the textbox is added on top of the listbox
+6. When clicking 'Append' button, the text in the textbox is added on bottom of the listbox
+7. When clicking 'Insert' button, the text in the textbox is added at the selected position in the list box. If there is no selected position, show a popup saying 'you have to select a position in the list box'
+8. When clicking 'Delete' button, the text in the textbox is removed from the list box. If there is no selected position, show a popup saying 'you have to select a position in the list box'
+9. Write the html, css, javascript into separate files
