@@ -1,0 +1,13 @@
+Write a javascript and html with the following requirement
+
+1. Create a table with three rows and one column at the center of the page. The width of the table is 600 pixel. The grid line of the table should be shown
+2. The cell in the first row is empty.
+3. put a text field with width same as table and height is 10 lines. The default text is "Type in any text here and hit [Submit] button"
+4. Put a dropdown box, two check boxes and a button. All should be aligned in one row
+5. Populate 5 commonly used html fonts in the drop box.
+6. The first check box is for selecting between Bold and Normal font
+7. The second check box is to selecting between Italic and Normal font.
+8. The button is to submit the text in the text field
+9. When the button is clicked, the text in the text field should be appended to the text in the first row of the table with font selected by the font dropdown box, bold and italic checkbox
+10. Write html and javascript in separate file
+11. Define all the callback functions separately and let them be called from addEventListener
