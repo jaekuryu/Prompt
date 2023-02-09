@@ -1,0 +1,17 @@
+Write a python script for the demo of K clustering method with following requirement.
+
+1. Do not import any specific library specialized for Data analysis (only numpy and matplotlib are allowed if necessary)
+2. Define following parameters (a ~ j) as mandatory
+	a)n_data : the number of sample data which will be generated automatically by the program
+	b)n_clusters: The number of clusters to form as well as the number of centroids to generate.
+	c)init: The method for initialization of the centroids. The options are 'k-means++', 'random', or an ndarray.
+	d)n_init: Number of time the k-means algorithm will be run with different centroid seeds. The final results will be the best output of n_init consecutive runs in terms of inertia.
+	e)max_iter: Maximum number of iterations of the k-means algorithm for a single run.
+	f)tol: Relative tolerance with regards to inertia to declare convergence.
+	g)precompute_distances: Precompute distances (faster but takes more memory).
+	h)verbose: Verbosity mode.
+	i)random_state: Determines random number generation for centroid initialization. Pass an int for reproducible results.
+	j)copy_x: When pre-computing distances it is more numerically accurate to center the data first. If copy_x is True, then the original data is not modified. Setting copy_x to False may be faster for large datasets.
+3. Generate a set of arbitrary data (the size of the set is n_data)
+4. Implement the K clustring algorithm for the given data
+5. Plot the data set with each cluster in different colors
