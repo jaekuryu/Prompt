@@ -1,0 +1,96 @@
+#First Prompt
+
+Write a javascript and html with the following requirement
+
+1. create a menu bar at the top of the page.
+2. Put an inputbox named 'fileName' with type="file", a button named 'Update', button named 'ExpandAll', button named 'CollapseAll' and button named 'Clear'. Make these components aligned left. Assume that the specified file has contents in JSON format
+3. Split the page vertically in two parts.
+4. When 'fileOpen' button is clicked, it shows File Open Dialogbox and allow user to navigate and select the file name. When a file is selcted, the filename and path should be printed into fileName inputbox
+5. When 'Update' button is clicked`, display the contents of the file name(a json format) in fileName on the left side of the page in the form of tree. The tree should be collapsable, expandable and editable. It would be the best if you implement this with built in Javascript. If not possible, you may use jquery library
+6. When 'ExpandAll' button is clicked`,Expand the tree on the left as much as possible.
+7. When 'CollapseAll' button is clicked`,Collapse the items to the root.
+8. When 'Clear' button is clicked`, remove all the items on the tree
+9. When one of the item on an item of the opened file on the left, the name of the selected item should be printed out on the right side of the page.
+10. When one of the items is doubleclicked, make it editable by user and the edit box should disappear when enter key is pressed.
+11. Write all the event handler as a separate functions
+12. Write html, css, javascript in separate files(name of css file is Jsonviewer.css and the name of the javascript file is Jsonviewer.js)
+
+
+#First Update - you would need to replace the source code part below from the code that you got from the first prompt
+
+can you rewrite the following function so that it prints key and value in the same line in the form of key:value ?      
+
+function displayJson(json) {
+
+        var leftContainer = document.getElementById("leftContainer");
+        leftContainer.innerHTML = '';
+      
+
+        // Create a recursive function to display the JSON contents as a tree
+
+        function createNode(node, parentNode) {
+          var nodeDiv = document.createElement("div");
+          nodeDiv.style.marginLeft = "10px";
+
+      
+          for (var key in node) {
+            var keyDiv = document.createElement("div");
+            var valueDiv = document.createElement("div");
+
+            keyDiv.innerHTML = key + ":";
+            keyDiv.style.fontWeight = "bold";
+            valueDiv.innerHTML = JSON.stringify(node[key]);
+
+            nodeDiv.appendChild(keyDiv);
+            nodeDiv.appendChild(valueDiv);
+
+            if (typeof node[key] === "object") {
+              createNode(node[key], valueDiv);
+            }
+          }
+          parentNode.appendChild(nodeDiv);
+        }      
+
+        createNode(json, leftContainer);
+
+      }
+
+
+#Second Update - you would need to replace the source code part below from the code that you got from the first update
+can you change following code in such a way that only the final node shows in the form of 'key:value' and all other nodes in the form of 'key:' ?
+
+function displayJson(json) {
+
+        var leftContainer = document.getElementById("leftContainer");
+        leftContainer.innerHTML = '';
+
+        // Create a recursive function to display the JSON contents as a tree
+
+        function createNode(node, parentNode) {
+          var nodeDiv = document.createElement("div");
+          nodeDiv.style.marginLeft = "10px";
+
+          for (var key in node) {
+            var keyValuePairDiv = document.createElement("div");
+
+            keyValuePairDiv.innerHTML = key + ":" + JSON.stringify(node[key]);
+            keyValuePairDiv.style.fontWeight = "bold";
+
+            nodeDiv.appendChild(keyValuePairDiv);
+
+            if (typeof node[key] === "object") {
+              createNode(node[key], keyValuePairDiv);
+            }
+
+          }
+
+          parentNode.appendChild(nodeDiv);
+
+        }
+
+      
+
+        createNode(json, leftContainer);
+
+      }
+
